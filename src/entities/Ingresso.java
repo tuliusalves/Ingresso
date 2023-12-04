@@ -1,12 +1,12 @@
 package entities;
 
-public class Ingresso {
+public abstract class Ingresso {
     private double valor;
 
     public Ingresso(){}
 
     public double getValor() {
-        return valor;
+        return 100;
     }
 
     public void setValor(double valor) {
@@ -15,5 +15,14 @@ public class Ingresso {
 
     public void imprimirValor(){
         System.out.println("O valor do ingresso R$:"+getValor());
+    }
+
+    public void imprimirValorAdicional() {
+    }
+
+    public void imprimirRelatorio() {
+    }
+
+    public void imprimirNormal() {
     }
 }
