@@ -2,14 +2,22 @@ package entities;
 
 public class Vip extends Ingresso{
     private double valorAdicional;
-
+    private String localizacao;
     public Vip(){}
 
     public double getValorAdicional() {
         return (getValor()*0.10)+getValor();
     }
 
-    public void imprimirValorAdicional(){
-        System.out.println("O ingresso VIP com valor adicional de 10%. R$:"+getValorAdicional());
+    public String getLocalizacao() {
+        return localizacao;
+    }
+
+    public void setLocalizacao(String localizacao) {
+        this.localizacao = localizacao;
+    }
+
+    public void imprimirLocal(){
+        System.out.println("Localização: "+ getLocalizacao());
     }
 }
